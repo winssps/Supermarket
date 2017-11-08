@@ -1,0 +1,604 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scromainpage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/test1"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:background="@drawable/hdp1"
+                    android:onClick="jump" />
+
+                <Button
+                    android:id="@+id/test2"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_toRightOf="@id/test1"
+                    android:background="@drawable/hdp2"
+                    android:onClick="jump" />
+
+                <Button
+                    android:id="@+id/test3"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_toRightOf="@id/test2"
+                    android:background="@drawable/hdp3"
+                    android:onClick="jump" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:iconifiedByDefault="false"
+            android:queryHint="请输入搜索内容" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <RelativeLayout
+                android:id="@+id/rea1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape2">
+
+                <ImageView
+                    android:id="@+id/bt1"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/food"
+                    android:text="智能家电" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="美食街"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rea2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape2">
+
+                <ImageView
+                    android:id="@+id/bt2"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/yanjing" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="霸王眼镜"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rea3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape2">
+
+                <ImageView
+                    android:id="@+id/bt3"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/baobao"
+                    android:text="智能家电" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="时尚包包"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rea4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/bt4"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ling"
+                    android:text="智能家电" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="零食屋"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <RelativeLayout
+                android:id="@+id/rea5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape2">
+
+                <ImageView
+                    android:id="@+id/bt5"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/chuang"
+                    android:text="智能家电" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="精品家居"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rea6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape2">
+
+                <ImageView
+                    android:id="@+id/bt6"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/yifu"
+                    android:text="智能家电" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="潮男服饰"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rea7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape2">
+
+                <ImageView
+                    android:id="@+id/bt7"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/jiadian"
+                    android:text="智能家电" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="智能家居"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rea8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/bt8"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/naiping"
+                    android:text="智能家电" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="母婴用品"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- 文本分割 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape">
+
+            <TextView
+                android:id="@+id/jp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:text="------精品推荐------"
+                android:textSize="40dp" />
+        </RelativeLayout>
+        <!-- 商品推荐 -->
+        <!--第一行-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/main_shop1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape3">
+
+                <ImageView
+                    android:id="@+id/addimg1"
+                    android:layout_width="170dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/beijingkaoya" />
+
+                <TextView
+                    android:id="@+id/spm1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/addimg1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:text="北京烤鸭"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/seal1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/spm1"
+                    android:layout_marginLeft="20dp"
+                    android:text="$ 98"
+                    android:textColor="#f55555"
+                    android:textSize="25dp" />
+
+                <ImageButton
+                    android:id="@+id/buy1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/spm1"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/shop" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/main_shop2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape3">
+
+                <ImageView
+                    android:id="@+id/addimg2"
+                    android:layout_width="170dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/bao1" />
+
+                <TextView
+                    android:id="@+id/spm2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/addimg2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:text="香奈儿包包"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/seal2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/spm2"
+                    android:layout_marginLeft="20dp"
+                    android:text="$ 5000"
+                    android:textColor="#f55555"
+                    android:textSize="25dp" />
+
+                <ImageButton
+                    android:id="@+id/buy2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/spm2"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/shop" />
+            </RelativeLayout>
+        </LinearLayout>
+        <!--第二行-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/main_shop3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+
+                android:background="@drawable/shape3">
+
+                <ImageView
+                    android:id="@+id/addimg3"
+                    android:layout_width="170dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/huilixie" />
+
+                <TextView
+                    android:id="@+id/spm3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/addimg3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:text="上海回力鞋"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/seal3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/spm3"
+                    android:layout_marginLeft="20dp"
+                    android:text="$ 500"
+                    android:textColor="#f55555"
+                    android:textSize="25dp" />
+
+                <ImageButton
+                    android:id="@+id/buy3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/spm3"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/shop" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/main_shop4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape3">
+
+                <ImageView
+                    android:id="@+id/addimg4"
+                    android:layout_width="170dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/chuang1" />
+
+                <TextView
+                    android:id="@+id/spm4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/addimg4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:text="席梦思床套"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/seal4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/spm4"
+                    android:layout_marginLeft="20dp"
+                    android:text="$ 2800"
+                    android:textColor="#f55555"
+                    android:textSize="25dp" />
+
+                <ImageButton
+                    android:id="@+id/buy4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/spm4"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/shop" />
+            </RelativeLayout>
+        </LinearLayout>
+        <!--第三行-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/main_shop5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape3">
+
+                <ImageView
+                    android:id="@+id/addimg5"
+                    android:layout_width="170dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/mianmo" />
+
+                <TextView
+                    android:id="@+id/spm5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/addimg5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:text="朝鲜面膜"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/seal5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/spm5"
+                    android:layout_marginLeft="20dp"
+                    android:text="$ 450"
+                    android:textColor="#f55555"
+                    android:textSize="25dp" />
+
+                <ImageButton
+                    android:id="@+id/buy5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/spm5"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/shop" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/main_shop6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape3">
+
+                <ImageView
+                    android:id="@+id/addimg6"
+                    android:layout_width="170dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/niuzaiku1" />
+
+                <TextView
+                    android:id="@+id/spm6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/addimg6"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:text="时尚牛仔裤"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/seal6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/spm6"
+                    android:layout_marginLeft="20dp"
+                    android:text="$ 288"
+                    android:textColor="#f55555"
+                    android:textSize="25dp" />
+
+                <ImageButton
+                    android:id="@+id/buy6"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/spm6"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/shop" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

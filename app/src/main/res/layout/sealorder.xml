@@ -1,0 +1,244 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" >
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+		<RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+		    <imageView
+		        android:layout_width="45dp"
+		        android:layout_height="45dp"
+		        android:src="@drawable/shop"
+		        android:layout_alignParentLeft="true"/>
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_centerHorizontal="true"
+			    android:layout_centerVertical="true"
+			    android:text="订单详情"
+			    android:textSize="20dp" />
+	    </RelativeLayout>
+	    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        >
+			<LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+	    		android:orientation="vertical"
+			    >
+				<RelativeLayout
+				    android:id="@+id/msname1"
+				    android:layout_width="match_parent"
+				    android:layout_height="50dp"
+				    android:layout_alignParentLeft="true"
+				    android:layout_alignParentTop="true" >
+				    <TextView
+				        android:id="@+id/SealMsg1"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_alignParentLeft="true"
+				        android:layout_centerVertical="true"
+				        android:layout_marginLeft="35dp"
+
+				        android:gravity="center_vertical"
+				        android:text="Seal20080808080808"
+				        android:textSize="15dp" />
+				    <TextView
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_alignParentRight="true"
+				        android:layout_centerVertical="true"
+				        android:layout_marginRight="20dp"
+				        android:gravity="center_vertical"
+				        android:text="未分配"
+				        android:textSize="15dp" />
+				</RelativeLayout>
+				<RelativeLayout
+				    android:layout_width="match_parent"
+				    android:layout_height="90dp">
+				    <TextView 
+				        android:id="@+id/buyName1"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:text="荻花题叶 "
+				        android:textSize="15dp"
+				        android:layout_marginTop="12dp"
+				        android:layout_marginLeft="70dp"
+				        
+				        />
+				    <TextView 
+				        android:id="@+id/price1"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_below="@id/buyName1"
+				        android:layout_alignLeft="@id/buyName1"
+				        android:layout_marginTop="5dp"
+				        android:text="价格 ￥500.00"
+				        android:textSize="15dp"
+				        />
+				    <TextView 
+				        android:id="@+id/data1"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_below="@id/price1"
+				        android:layout_alignLeft="@id/price1"
+				        android:layout_marginTop="5dp"
+				        android:text="下单时间  2017/10/14  23:15:06"
+				        android:textSize="15dp"
+				        />
+				</RelativeLayout>
+			</LinearLayout>
+	    </RelativeLayout>
+	    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        >
+			<LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+	    		android:orientation="vertical"
+			    >
+				<RelativeLayout
+				    android:id="@+id/msname2"
+				    android:layout_width="match_parent"
+				    android:layout_height="50dp"
+				    android:layout_alignParentLeft="true"
+				    android:layout_alignParentTop="true" >
+				    <TextView
+				        android:id="@+id/SealMsg2"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_alignParentLeft="true"
+				        android:layout_centerVertical="true"
+				        android:layout_marginLeft="35dp"
+				        android:drawableLeft="@drawable/shop"
+				        android:gravity="center_vertical"
+				        android:text="Seal20080808080808"
+				        android:textSize="15dp" />
+				    <TextView
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_alignParentRight="true"
+				        android:layout_centerVertical="true"
+				        android:layout_marginRight="20dp"
+				        android:gravity="center_vertical"
+				        android:text="未分配"
+				        android:textSize="15dp" />
+				</RelativeLayout>
+				<RelativeLayout
+				    android:layout_width="match_parent"
+				    android:layout_height="90dp">
+				    <TextView 
+				        android:id="@+id/buyName2"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:text="倾向兰曰敬邀曰 "
+				        android:textSize="15dp"
+				        android:layout_marginTop="12dp"
+				        android:layout_marginLeft="70dp"
+				        
+				        />
+				    <TextView 
+				        android:id="@+id/price2"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_below="@id/buyName2"
+				        android:layout_alignLeft="@id/buyName2"
+				        android:layout_marginTop="5dp"
+				        android:text="价格 ￥500.00"
+				        android:textSize="15dp"
+				        />
+				    <TextView 
+				        android:id="@+id/data2"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_below="@id/price2"
+				        android:layout_alignLeft="@id/price2"
+				        android:layout_marginTop="5dp"
+				        android:text="下单时间  2017/10/14  23:15:06"
+				        android:textSize="15dp"
+				        />
+				</RelativeLayout>
+			</LinearLayout>
+	    </RelativeLayout>
+	    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        >
+			<LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+	    		android:orientation="vertical"
+			    >
+				<RelativeLayout
+				    android:id="@+id/msname3"
+				    android:layout_width="match_parent"
+				    android:layout_height="50dp"
+				    android:layout_alignParentLeft="true"
+				    android:layout_alignParentTop="true" >
+				    <TextView
+				        android:id="@+id/SealMsg3"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_alignParentLeft="true"
+				        android:layout_centerVertical="true"
+				        android:layout_marginLeft="35dp"
+
+				        android:gravity="center_vertical"
+				        android:text="Seal20080808080808"
+				        android:textSize="15dp" />
+				    <TextView
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_alignParentRight="true"
+				        android:layout_centerVertical="true"
+				        android:layout_marginRight="20dp"
+				        android:gravity="center_vertical"
+				        android:text="未分配"
+				        android:textSize="15dp" />
+				</RelativeLayout>
+				<RelativeLayout
+				    android:layout_width="match_parent"
+				    android:layout_height="90dp">
+				    <TextView 
+				        android:id="@+id/buyName3"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:text="叹矣自笑一字呆 "
+				        android:textSize="15dp"
+				        android:layout_marginTop="12dp"
+				        android:layout_marginLeft="70dp"
+				        
+				        />
+				    <TextView 
+				        android:id="@+id/price3"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_below="@id/buyName3"
+				        android:layout_alignLeft="@id/buyName3"
+				        android:layout_marginTop="5dp"
+				        android:text="价格 ￥500.00"
+				        android:textSize="15dp"
+				        />
+				    <TextView 
+				        android:id="@+id/data3"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_below="@id/price3"
+				        android:layout_alignLeft="@id/price3"
+				        android:layout_marginTop="5dp"
+				        android:text="下单时间  2017/10/14  23:15:06"
+				        android:textSize="15dp"
+				        />
+				</RelativeLayout>
+			</LinearLayout>
+	    </RelativeLayout>
+	</LinearLayout>
+
+</ScrollView>

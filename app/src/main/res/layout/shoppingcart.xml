@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/shopimg"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/shop1"/>
+    <TextView
+        android:id="@+id/shopnull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shopimg"
+        android:layout_marginTop="20dp"
+        android:textSize="36px"
+        android:textColor="@color/colorBlack"
+        android:layout_centerHorizontal="true"
+        android:text="购物车空空如也~~"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:weightSum="10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPeopleBg"
+        android:layout_weight="2">
+        <ImageView
+            android:id="@+id/myselficon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/shop1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="普通游客"
+            android:layout_below="@+id/myselficon"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="余额"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="42dp"
+            android:textSize="22dp"
+            android:id="@+id/money" />
+
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/money"
+            android:layout_alignStart="@+id/money"
+            android:layout_marginLeft="17dp"
+            android:textSize="22dp"
+            android:id="@+id/moneynum" />
+
+        <TextView
+            android:text="登录"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="38dp"
+            android:textSize="22dp"
+            android:id="@+id/topup"
+            android:onClick="topup1"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/moreorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/xximg"
+            android:scaleType="fitStart"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/fen"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更多订单"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:textColor="@color/colorBlack"
+            android:layout_toEndOf="@+id/xximg" />
+
+        <ImageView
+            android:id="@+id/xximg2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/jian"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/showmore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/xximg2"
+            android:layout_marginRight="10dp"
+            android:textSize="14dp"
+            android:text="查看全部订单"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="@drawable/shape"
+        android:orientation="horizontal">
+            <RelativeLayout
+                android:id="@+id/unpayfor"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/fukuan"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/fukuan" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fukuan"
+                    android:layout_centerHorizontal="true"
+                    android:text="待付款" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/readygo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/fahuo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/fahuo" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fahuo"
+                    android:layout_centerHorizontal="true"
+                    android:text="待发货" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/readyget"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/shouhuo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/shouhuo" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/shouhuo"
+                    android:layout_centerHorizontal="true"
+                    android:text="代收货" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/getback"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/tuihuo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/tuihuo" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tuihuo"
+                    android:layout_centerHorizontal="true"
+                    android:text="退换货" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/aboutme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/tanicon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="fitStart"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/tan"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="关于Supermarket"
+            android:layout_toEndOf="@id/tanicon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+        <ImageView
+            android:id="@+id/xximg3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/jian"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+</LinearLayout>
